@@ -1,0 +1,25 @@
+{
+  "name": "competa-dashboard",
+  "version": "1.0.0",
+  "description": "Opdracht van Competa voor het maken van een dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikkamp/Competa-Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikkamp/Competa-Dashboard/issues"
+  },
+  "homepage": "https://github.com/rikkamp/Competa-Dashboard#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.1"
+  }
+}
