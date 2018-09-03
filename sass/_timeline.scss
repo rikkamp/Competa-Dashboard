@@ -1,29 +1,46 @@
+$timeline-grid-gap: 1%;
+$timeline-grid-row-gap: 5%;
 .timeline {
 	font-family: 'Ubuntu';
 	height: 500px;
 	background-color: green;
 
+	&__container {
+		height: 100%;
+	}
+
 	&__header {
 		color: $lightgrey;
 		padding: 10px;
+		height: 5%;
 	}
 
 	&__grid {
-		background-color: salmon;
+		background-color: $white;
 		display: grid;
-		grid-template-columns: 25% 25% 25% 25%;
-		grid-template-rows: 50% 50%;
+		height: 90%;
+		grid-template-columns: 4fr 2fr 2fr; 
+		//repeat(8, calc(12.5% - (#{$timeline-grid-gap} / 8)));
+		grid-template-rows: 3fr 2fr; 
+		// repeat(5, calc(20% - (#{$timeline-grid-row-gap} / 5)));
+		grid-gap: $timeline-grid-gap;
+		grid-row-gap: $timeline-grid-row-gap;
 	}
 
 	&__item {
-		
+		background-size: cover; 
+		border-radius: 10px;
+		grid-template-rows: 2fr;
+		&--mp4 {
+			box-shadow: 10px 10px 10px $lightgrey;
+		}
+
 		&--mp4-big {
-			grid-column-start: 1;
-			grid-column-end: 3;
 			background-color: blue;
 		}
-		
+
 		&--mp4-small {
+			
 			background-color: red;
 		}
 		
