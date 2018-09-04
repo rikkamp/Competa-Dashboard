@@ -42,5 +42,4 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
-
 };
