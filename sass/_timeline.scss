@@ -1,5 +1,6 @@
 $timeline-grid-gap: 1.5%;
 $timeline-grid-row-gap: 3%;
+
 .timeline {
 	font-family: 'Ubuntu';
 	height: 600px;
@@ -46,7 +47,76 @@ $timeline-grid-row-gap: 3%;
 		}
 		
 		&--mp3 {
-			background-color: purple;
+			background-color: #efeff9;
+			padding: 25px 20px 25px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
+		&--mp3-picture{
+			//height: 30%;
+			// width: auto;
+		}
+	}
+}
+.mp3-item{
+	&__play-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+		width: 60px;
+		border-radius: 10px;
+		background-color: $white;
+		min-width: 60px;
+		min-height: 60px;
+	}
+	&__play-image {
+		height: 14px;
+	}
+	&__sound-image {
+		width: 75%;
+		height: 60px;
+	}
+	&__play-sound-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		width: 100%;
+		align-self: center;
+	}
+	&__duration {
+		display: flex;
+		justify-content: flex-end; 
+		height: 15%;
+		color: #666;
+	}
+	&__footer-block {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__file-title {
+		margin-bottom: 3%;
+	}
+	&__user-size {
+		color: #666;
+	}
+	&__comment-block {
+		display: flex;
+		align-items: flex-end;
+	}
+	&__footer-info {
+		display: flex;
+		flex-direction: column;
+	}
+	&__comment-amount {
+		display: flex;
+		align-self: flex-end;
+		color: #666;
+	}
+	&__comment-image {
+		height: 20px;
+		margin-right: 5px;
 	}
 }
