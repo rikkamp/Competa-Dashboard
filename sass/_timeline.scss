@@ -1,16 +1,17 @@
 .timeline {
 	font-family: 'Arial';
 	height: 600px;
-	background-color: green;
 
 	&__container {
 		height: 100%;
 	}
 
 	&__header {
+		display: flex;
+		align-items: center;
 		color: $lightgrey;
-		padding: 10px;
-		height: 5%;
+		padding: 10px 10px 0 10px;
+		height: 4%;
 	}
 
 	&__grid {
@@ -34,6 +35,22 @@
 		border-radius: 10px;
 		grid-row: span 2 / span 2;
 		
+		&:hover {
+			position: relative;
+
+			:after {
+				border-radius: 10px;
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: block;
+				background-color: $white-transparent;
+			}
+		}
+
 		&--lower-background {
 			background-position-y: -90px;
 		}
@@ -45,44 +62,25 @@
 			justify-content: space-between;
 			color: $white;
 			padding: 20px 20px 17px 25px;
-
-			&:hover {
-				position: relative;
-
-				:after {
-					border-radius: 10px;
-					content: '';
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					display: block;
-					background-color: $white-transparent;
-				}
-			}
+			
 		}
 
 		&--mp4-big {
 			grid-column: 1 / 3;
 			grid-row: 1 / 4;
 		}
-
+		
 		&--mp4-small {
 			padding-top: 15px;
 		}
 		
 		&--mp3 {
-			background-color: #efeff9;
+			background-color: $mp3-item;
+			color: $black;
 			padding: 25px 20px 25px 30px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-		}
-
-		&--mp3-picture{
-			//height: 30%;
-			// width: auto;
 		}
 	}
 }
@@ -204,7 +202,7 @@
 		display: flex;
 		justify-content: flex-end; 
 		height: 15%;
-		color: #666;
+		color: $semigrey;
 	}
 
 	&__footer-block {
@@ -217,7 +215,7 @@
 	}
 
 	&__user-size {
-		color: #666;
+		color: $semigrey;
 	}
 
 	&__comment-block {
@@ -233,7 +231,7 @@
 	&__comment-amount {
 		display: flex;
 		align-self: flex-end;
-		color: #666;
+		color: $semigrey;
 	}
 
 	&__comment-image {
