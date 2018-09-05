@@ -6,8 +6,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 25%;
-	height: 500px;
+	width: 17.5%;
+	height: 80vh;
+	padding-top: 2%;
+	position: absolute;
+	top: 0;
+	left: 0;
 	background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 
 	&__add-option {
@@ -19,8 +23,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: white;
-		margin: 10% 0 0 90%;
+		color: $white;
+		margin: 17.5% 0 0 87.5%;
 	}
 
 	&__logo {
@@ -34,24 +38,25 @@
 	}
 	
 	&__list-item {
-		margin: 5% 0 0 60%;
+		margin: 5% 0 0 47.5%;
 	}
 
 	&__list-item-link {
 		display: inline-block;
-		color: grey;
+		color: $lightgrey;
 		text-decoration: none;
 		outline: none;
+		margin-top: 5%;
 
 		&:focus {
-			color: black;
+			color: $black;
 			&::after {
 				position: absolute;
-				left: 11.5%;
-				margin: 0.6% 0 0 0;
+				left: 25%;
+				margin: 2.5% 0 0 0;
 				display: inline-block;
 				height: 1px;
-				background: #000;
+				background: $black;
 				width: 40px;
 				border: 0;
 				content: '';
@@ -64,11 +69,11 @@
 
 	&__list-item-link::after {
 		position: absolute;
-		left: 11.5%;
-		margin: 0.6% 0 0 0;
+		left: 25%;
+		margin: 2.5% 0 0 0;
 		display: inline-block;
 		height: 1px;
-		background: #000;
+		background: $black;
 		transition: width .3s;
 		width: 0;
 		border: 0;
@@ -98,14 +103,14 @@
 
 		&--loading {
 			margin: 0 0 0 31%;
-			color: grey;
+			color: $grey;
 		}
 
 	}
 
 	&__list-item-line {
 		&--grey {
-			background: lightgrey;
+			background: $lightgrey;
 			border: 0;
 			width: 35%;
 			height: 0.8px;
@@ -113,7 +118,7 @@
 		}
 
 		&--black {
-			background: black;
+			background: $black;
 			border: 0;
 			width: 65%;
 			height: 0.8px;
@@ -141,7 +146,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			color: white;
+			color: $white;
 			margin: 10% 0 0 90%;
 
 			&:hover {
@@ -156,7 +161,7 @@
 				margin: 0.6% 0 0 0;
 				display: inline-block;
 				height: 1px;
-				background: #000;
+				background: $black;
 				transition: width .3s;
 				width: 0;
 				border: 0;
@@ -189,7 +194,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			color: white;
+			color: $white;
 			margin: 10% 0 0 90%;
 
 			&:hover {
