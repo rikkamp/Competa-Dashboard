@@ -1,7 +1,3 @@
-body {
-	height: 100%;
-}
-
 .header {
 	&__info {
 		height: 100px;
@@ -20,16 +16,16 @@ body {
 	}
 }
 
-#notification {
+.notification {
 	transition: opacity 1s;
 }
 
-#counted-notifications {
+.counted-notifications {
 	height: 23px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #FFFFFF;
+	color: $white;
 	background-color: $red;
 	border: 1px solid $red;
 	border-radius: 20%;
