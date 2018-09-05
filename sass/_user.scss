@@ -41,25 +41,37 @@
   cursor: pointer;
 }
 
-.display_none{
+.dropbtn{
+  width: 10px;
+  height: 10px;
+}
+
+.dropdown-content{
+  background-color: lightgrey;
   display: none;
-}
-
-.display_block{
-  display: block;
-}
-
-.dropown__content{
   text-align: center;
   position: absolute;
   min-width: 100px;
+  overflow: auto;
+  z-index: 1;
 }
 
-.p{
-  border: black solid 1px;
+.dropdown-content > p{
+  width: 100%;
   transition: background-color 1s;
+  padding: 5px 0 5px;
 }
 
-.p:hover{
+.dropdown-content > p > a{
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content > p:hover{
   background-color: darkgrey;
 }
+
+.show{
+  display: block;
+}
+

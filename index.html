@@ -27,25 +27,43 @@
             <div class="header__icon" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
         </div>
     </header>
-
-    <div class="user">
-        <div class="user__stat">
-            <div class="user__status"></div>
-            <img class="user__img" src="img/example.png" alt="example">
-        </div>
-        <span onclick="dropdown('content')" class="user__name">Crivian</span>
-        <div class="dropdown">
-            <img onclick="dropdown('content')" class="user__dropdown" src="img/angle-down-solid.svg">
-            <div id="content" class="display_none dropown__content">
-                <p class="p">jochie</p>
-                <p class="p">zuig</p>
-                <p class="p">mij</p>
+        <div class="user">
+            <div class="user__stat">
+                <div class="user__status"></div>
+                <img class="user__img" src="img/example.png" alt="example">
+            </div>
+            <span onclick="dropdown('content')" class="user__name">Test</span>
+            <div class="dropdown">
+                <img onclick="dropdown('content')" class="dropbtn" src="img/angle-down-solid.svg">
+                <div id="content" class="dropdown-content">
+                    <p><a href="#">Profile</a></p>
+                    <p><a href="#">Settings</a></p>
+                    <p><a href="#">Log out</a></p>
+                </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
-<script type="text/javascript">
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function dropdown(id) {
+            document.getElementById(id).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
 
     let noti = document.getElementById("notification");
     let nr = document.getElementById("counted-notifications");
@@ -68,17 +86,5 @@
     function fadeIn(){
         noti.classList.remove('fade-out');
         noti.classList.add('fade-in');
-    }
-
-    function dropdown(id){
-        id = document.getElementById(id);
-        if(id.classList.contains('display_none')){
-            id.classList.remove('display_none');
-            id.classList.add('display_block');
-        }
-        else if(id.classList.contains('display_block')){
-            id.classList.remove('display_block');
-            id.classList.add('display_none');
-        }
     }
 </script>
