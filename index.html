@@ -6,6 +6,86 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
-	<h1>Competa Dashboard</h1>
+    <header class="header">
+        <nav class="nav">
+            oof
+        </nav>
+        <div class="header__main">
+            <div>
+                <p>Frame marketing</p>
+                <h2>Recent files</h2>
+            </div>
+            <div>
+                <p>9 members</p>
+                <img class="header__icon" src="img/add-solid" alt="Oops">
+            </div>
+        </div>
+        <div class="header__info">
+            <img class="header__icon" src="img/search-solid.svg">
+            <img class="header__icon" src="img/user-friends-solid.svg">
+            <div class="dropdown">
+                <img class="fade-out header__icon" id="notification" onclick="dropdown('header__dropdown-content')" src="img/bell-solid.svg">
+                <div class="header__icon" id="counted-notifications" onclick="dropdown('header__dropdown-content'); fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
+                <div id="header__dropdown-content" class="display_none dropown__content">
+                    <p class="p">jochie</p>
+                    <p class="p">zuig</p>
+                    <p class="p">mij</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="user">
+        <div class="user__stat">
+            <div class="user__status"></div>
+            <img class="user__img" src="img/example.png" alt="example">
+        </div>
+        <span onclick="dropdown('content')" class="user__name">Crivian</span>
+        <div class="dropdown">
+            <img onclick="dropdown('content')" class="user__dropdown" src="img/angle-down-solid.svg">
+            <div id="content" class="display_none dropown__content">
+                <p class="p">jochie</p>
+                <p class="p">zuig</p>
+                <p class="p">mij</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script type="text/javascript">
+
+    let noti = document.getElementById("notification");
+    let nr = document.getElementById("counted-notifications");
+
+    function changeNotification(){
+        noti.style.display = 'none';
+        nr.style.display = 'flex';
+    }
+    onload(changeNotification());
+
+    function fadeOut(){
+        nr.classList.add('fade-out');
+    }
+
+    function fade(){
+        nr.style.display = 'none';
+        noti.style.display = 'flex';
+    }
+
+    function fadeIn(){
+        noti.classList.remove('fade-out');
+        noti.classList.add('fade-in');
+    }
+
+    function dropdown(id){
+        id = document.getElementById(id);
+        if(id.classList.contains('display_none')){
+            id.classList.remove('display_none');
+            id.classList.add('display_block');
+        }
+        else if(id.classList.contains('display_block')){
+            id.classList.remove('display_block');
+            id.classList.add('display_none');
+        }
+    }
+</script>
