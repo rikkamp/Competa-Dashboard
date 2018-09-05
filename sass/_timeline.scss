@@ -1,24 +1,24 @@
 .timeline {
 	font-family: 'Arial';
-	height: 600px;
+	height: fit-content;
 
 	&__container {
-		height: 100%;
+		padding-bottom: 30px;
+		height: fit-content;
 	}
 
 	&__header {
 		display: flex;
 		align-items: center;
 		color: $lightgrey;
-		padding: 10px 10px 0 10px;
-		height: 4%;
+		padding: 10px;
 	}
 
 	&__grid {
 		background-color: $white;
 		display: grid;
 		padding: 10px;
-		height: 90%;
+		height: 500px;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
 		grid-gap: 1.5%;
@@ -53,6 +53,11 @@
 
 		&--lower-background {
 			background-position-y: -90px;
+		}
+
+		&--zoomed-in {
+			background-size: 535px;
+			background-position-y: 0;
 		}
 
 		&--mp4 {
@@ -134,6 +139,20 @@
 	&__footer-block {
 		display: flex;
 		justify-content: space-between;
+
+		&--dark-text {
+			.mp4-item__file-name {
+				color: $black;
+			}
+
+			.mp4-item__username {
+				color: $semigrey;
+			}
+
+			.mp4-item__comment-amount {
+				color: $semigrey;
+			}
+		}
 	}
 
 	&__info {
