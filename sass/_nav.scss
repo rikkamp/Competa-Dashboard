@@ -29,15 +29,15 @@
 		list-style-type: none;
 		padding: 5% 0 0 0;
 	}
-		&__listitem {
+		&__list-item {
 			margin: 5% 0 0 60%;
 		}
-				&__listitem-link {
+				&__list-item-link {
 				display: inline-block;
 				color: #000;
 				text-decoration: none;
 			}
-				&__listitem-link::after {
+				&__list-item-link::after {
 				position: absolute;
 				left: 11.5%;
 				margin: 0.6% 0 0 0;
@@ -49,12 +49,12 @@
 				border: 0;
 				content: '';
 			}
-			&__listitem-link:hover::after {
+			&__list-item-link:hover::after {
 				width: 40px;
 				//transition: width .3s;
 			}
 
-			&__listitem-add-option {
+			&__list-item-add-option {
 			}
 
 			&__add-option:hover {
@@ -65,26 +65,26 @@
 		list-style-type: none;
 		margin: 30% 0 0 0;
 	}
-		.second-nav__listitem {
+		.second-nav__list-item {
 		}
-		.second-nav__listitem--title {
+		.second-nav__list-item--title {
 			margin: 0 0 0 32%;
 		}
-		.second-nav__listitem--loading {
+		.second-nav__list-item--loading {
 			margin: 0 0 0 31%;
 			color: grey;
 		}
 
-		.second-nav__listitem-hr {
+		.second-nav__list-item-line {
 		}
-		.second-nav__listitem-hr--grey {
+		.second-nav__list-item-line--grey {
 			background: lightgrey;
 			border: 0;
 			width: 35%;
 			height: 0.8px;
 			margin: 0 0 0 65%;
 		}
-		.second-nav__listitem-hr--black {
+		.second-nav__list-item-line--black {
 			background: black;
 			border: 0;
 			width: 65%;
@@ -120,7 +120,7 @@
 		background-color: rgb(99, 108, 255);
 	}
 
-	.main-nav__listitem-link::after {
+	.main-nav__list-item-link::after {
 		position: absolute;
 		left: 11.5%;
 		margin: 0.6% 0 0 0;
@@ -132,7 +132,7 @@
 		border: 0;
 		content: '';
 	}
-	.main-nav__listitem-link:hover::after {
+	.main-nav__list-item-link:hover::after {
 		width: 20px;
 	}
 }
@@ -164,11 +164,11 @@
 		background-color: rgb(99, 108, 255);
 	}
 
-	.main-nav__listitem-link::after {
+	.main-nav__list-item-link::after {
 		display: none;
 	}
 
-	.main-nav__listitem-link:hover::after {
+	.main-nav__list-item-link:hover::after {
 		display: none;
 	}
 }
