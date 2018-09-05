@@ -23,15 +23,8 @@
         <div class="header__info">
             <img class="header__icon" src="img/search-solid.svg">
             <img class="header__icon" src="img/user-friends-solid.svg">
-            <div class="dropdown">
-                <img class="fade-out header__icon" id="notification" onclick="dropdown('header__dropdown-content')" src="img/bell-solid.svg">
-                <div class="header__icon" id="counted-notifications" onclick="dropdown('header__dropdown-content'); fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
-                <div id="header__dropdown-content" class="display_none dropown__content">
-                    <p class="p">jochie</p>
-                    <p class="p">zuig</p>
-                    <p class="p">mij</p>
-                </div>
-            </div>
+            <img class="fade-out header__icon" id="notification" src="img/bell-solid.svg">
+            <div class="header__icon" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
         </div>
     </header>
 
