@@ -1,14 +1,13 @@
-*{
+* {
 	font-size: 1.1vw;
 }
 
-
-.mainnav{
+.main-nav {
 	width: 25%;
 	height: 600px;
 	background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 
-	&__addoption{
+	&__add-option {
 		text-decoration: none;
 		width: 50px;
 		height: 50px;
@@ -21,24 +20,24 @@
 		margin: 10% 0 0 90%;
 	}
 
-	&__logo{
+	&__logo {
 		margin: 0 0 0 45%;
 		padding: 5% 0 0 0;
 	}
 
-	&__ul{
+	&__list {
 		list-style-type: none;
 		padding: 5% 0 0 0;
 	}
-		&__li{
+		&__listitem {
 			margin: 5% 0 0 60%;
 		}
-				&__lilink{
+				&__listitem-link {
 				display: inline-block;
 				color: #000;
 				text-decoration: none;
 			}
-				&__lilink::after {
+				&__listitem-link::after {
 				position: absolute;
 				left: 11.5%;
 				margin: 0.6% 0 0 0;
@@ -50,42 +49,42 @@
 				border: 0;
 				content: '';
 			}
-			&__lilink:hover::after {
+			&__listitem-link:hover::after {
 				width: 40px;
 				//transition: width .3s;
 			}
 
-			&__liaddoption{
+			&__listitem-add-option {
 			}
 
-			&__addoption:hover{
+			&__add-option:hover {
 				background-color: rgb(99, 108, 255);
 			}
 
-	.secondnav__ul{
+	.second-nav__list {
 		list-style-type: none;
 		margin: 30% 0 0 0;
 	}
-		.secondnav__li{
+		.second-nav__listitem {
 		}
-		.secondnav__li--title{
+		.second-nav__listitem--title {
 			margin: 0 0 0 32%;
 		}
-		.secondnav__li--loading{
+		.second-nav__listitem--loading {
 			margin: 0 0 0 31%;
 			color: grey;
 		}
 
-		.secondnav__lihr{
+		.second-nav__listitem-hr {
 		}
-		.secondnav__lihr--grey{
+		.second-nav__listitem-hr--grey {
 			background: lightgrey;
 			border: 0;
 			width: 35%;
 			height: 0.8px;
 			margin: 0 0 0 65%;
 		}
-		.secondnav__lihr--black{
+		.second-nav__listitem-hr--black {
 			background: black;
 			border: 0;
 			width: 65%;
@@ -94,19 +93,18 @@
 		}
 }
 
-// 1000 px media screen
 @media only screen and (max-width: 1000px) {
 	* {
 		font-size: 1.6vw;
 	}
 
-	.mainnav {
+	.main-nav {
 		width: 25%;
 		height: 500px;
 		background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 	}
 
-	.mainnav__addoption{
+	.main-nav__add-option {
 		text-decoration: none;
 		width: 40px;
 		height: 40px;
@@ -118,11 +116,11 @@
 		color: white;
 		margin: 10% 0 0 90%;
 	}
-	.mainnav__addoption:hover{
+	.main-nav__add-option:hover {
 		background-color: rgb(99, 108, 255);
 	}
 
-	.mainnav__lilink::after {
+	.main-nav__listitem-link::after {
 		position: absolute;
 		left: 11.5%;
 		margin: 0.6% 0 0 0;
@@ -134,25 +132,23 @@
 		border: 0;
 		content: '';
 	}
-	.mainnav__lilink:hover::after {
+	.main-nav__listitem-link:hover::after {
 		width: 20px;
-		//transition: width .3s;
 	}
 }
 
-// 750 px media screen
 @media only screen and (max-width: 750px) {
 	* {
 		font-size: 2.1vw;
 	}
 
-	.mainnav {
+	.main-nav {
 		width: 25%;
 		height: 400px;
 		background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 	}
 
-	.mainnav__addoption{
+	.main-nav__add-option {
 		text-decoration: none;
 		width: 30px;
 		height: 30px;
@@ -164,15 +160,15 @@
 		color: white;
 		margin: 10% 0 0 90%;
 	}
-	.mainnav__addoption:hover{
+	.main-nav__add-option:hover {
 		background-color: rgb(99, 108, 255);
 	}
 
-	.mainnav__lilink::after {
+	.main-nav__listitem-link::after {
 		display: none;
-
 	}
-	.mainnav__lilink:hover::after {
+
+	.main-nav__listitem-link:hover::after {
 		display: none;
 	}
 }
