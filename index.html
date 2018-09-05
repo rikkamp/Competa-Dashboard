@@ -4,87 +4,44 @@
 	<meta charset="utf-8" />
 	<title>Page Title</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="script" href="js/Jochie.js">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            oof
-        </nav>
-        <div class="header__main">
-            <div>
-                <p>Frame marketing</p>
-                <h2>Recent files</h2>
-            </div>
-            <div>
-                <p>9 members</p>
-                <img class="header__icon" src="img/add-solid" alt="Oops">
-            </div>
-        </div>
-        <div class="header__info">
-            <img class="header__icon" src="img/search-solid.svg">
-            <img class="header__icon" src="img/user-friends-solid.svg">
-            <img class="fade-out header__icon" id="notification" src="img/bell-solid.svg">
-            <div class="header__icon" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
-        </div>
-    </header>
-        <div class="user">
-            <div class="user__stat">
-                <div class="user__status"></div>
-                <img class="user__img" src="img/example.png" alt="example">
-            </div>
-            <span onclick="dropdown('content')" class="user__name">Test</span>
-            <div class="dropdown">
-                <img onclick="dropdown('content')" class="dropbtn" src="img/angle-down-solid.svg">
-                <div id="content" class="dropdown-content">
-                    <p><a href="#">Profile</a></p>
-                    <p><a href="#">Settings</a></p>
-                    <p><a href="#">Log out</a></p>
-                </div>
-            </div>
-        </div>
-
-    <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function dropdown(id) {
-            document.getElementById(id).classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        };
-
-    let noti = document.getElementById("notification");
-    let nr = document.getElementById("counted-notifications");
-
-    function changeNotification(){
-        noti.style.display = 'none';
-        nr.style.display = 'flex';
-    }
-    onload(changeNotification());
-
-    function fadeOut(){
-        nr.classList.add('fade-out');
-    }
-
-    function fade(){
-        nr.style.display = 'none';
-        noti.style.display = 'flex';
-    }
-
-    function fadeIn(){
-        noti.classList.remove('fade-out');
-        noti.classList.add('fade-in');
-    }
-</script>
+<header class="header">
+	<nav class="nav">
+		oof
+	</nav>
+	<div class="header__main">
+		<div>
+			<p>Frame marketing</p>
+			<h2>Recent files</h2>
+		</div>
+		<div>
+			<p>9 members</p>
+			<img class="header__icon" src="img/add-solid" alt="Oops">
+		</div>
+	</div>
+	<div class="header__info">
+		<img class="header__icon" src="img/search-solid.svg">
+		<img class="header__icon" src="img/user-friends-solid.svg">
+		<img class="fade-out header__icon" id="notification" src="img/bell-solid.svg">
+		<div class="header__icon" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 1000);  setTimeout(fadeIn, 1020);">2</div>
+	</div>
+</header>
+	<div class="user">
+		<div class="user__stat">
+			<div class="user__status"></div>
+			<img class="user__img" src="img/example.png" alt="example">
+		</div>
+		<span onclick="dropdown('content')" class="user__name">Crivian</span>
+		<div class="user__dropdown">
+			<img onclick="dropdown('content')" class="user__dropbtn" src="img/angle-down-solid.svg">
+			<div id="content" class="user__dropdown-content">
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Profile</a></p>
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Settings</a></p>
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Log out</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
