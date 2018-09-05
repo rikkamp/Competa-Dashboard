@@ -1,0 +1,267 @@
+.timeline {
+	font-family: 'Arial';
+	height: fit-content;
+
+	&__container {
+		padding-bottom: 30px;
+		height: fit-content;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		color: $lightgrey;
+		padding: 10px;
+	}
+
+	&__grid {
+		background-color: $white;
+		display: grid;
+		padding: 10px;
+		height: 500px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+		grid-gap: 1.5%;
+		grid-row-gap: 3%;
+
+		& * {
+			text-decoration: none;
+		}
+	}
+
+	&__item {
+		background-size: cover; 
+		background-position: center;
+		border-radius: 10px;
+		grid-row: span 2 / span 2;
+		
+		&:hover {
+			position: relative;
+
+			:after {
+				border-radius: 10px;
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: block;
+				background-color: $white-transparent;
+			}
+		}
+
+		&--lower-background {
+			background-position-y: -90px;
+		}
+
+		&--zoomed-in {
+			background-size: 535px;
+			background-position-y: 0;
+		}
+
+		&--mp4 {
+			box-shadow: 5px 5px 20px $darkgrey-transparent;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			color: $white;
+			padding: 20px 20px 17px 25px;
+			
+		}
+
+		&--mp4-big {
+			grid-column: 1 / 3;
+			grid-row: 1 / 4;
+		}
+		
+		&--mp4-small {
+			padding-top: 15px;
+		}
+		
+		&--mp3 {
+			background-color: $mp3-item;
+			color: $black;
+			padding: 25px 20px 17px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+}
+
+.mp4-item {
+	&__length-block {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__progress-block {
+		display: flex;
+		align-items: center;
+		background-color: $darkgrey-transparent;
+		border-radius: 7.5px;
+		padding: 6px 10px;
+		margin-right: 2%;
+	}
+	
+	&__progress-ball {
+		background-color: $lightblue;
+		border-radius: 100%;
+		height: 12px;
+		width: 12px;
+		margin-right: 5px;
+	}
+	
+	&__length {
+		display: flex;
+		align-items: center;
+		background-color: $lightblue-transparent;
+		border-radius: 7.5px;
+		padding: 6px 7.5px;
+	}
+
+	&__play-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 75px;
+		width: 75px;
+		border-radius: 10px;
+		background-color: $white;
+		box-shadow: 5px 5px 50px $darkgrey-transparent;
+	}
+	
+	&__play-image {
+		height: 16px;
+	}
+
+	&__footer-block {
+		display: flex;
+		justify-content: space-between;
+
+		&--dark-text {
+			.mp4-item__file-name {
+				color: $black;
+			}
+
+			.mp4-item__username {
+				color: $semigrey;
+			}
+
+			.mp4-item__comment-amount {
+				color: $semigrey;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__file-name {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	&__username {
+		font-size: 0.8rem;
+		margin-top: 5px;
+		color: $lightergrey;
+	}
+
+	&__comment-block {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__comment-image {
+		height: 20px;
+		margin-right: 5px;
+	}
+	
+	&__comment-amount {
+		color: $lightergrey;
+	}
+}
+
+.mp3-item {
+	&__play-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+		width: 60px;
+		border-radius: 10px;
+		background-color: $white;
+		min-width: 60px;
+		min-height: 60px;
+	}
+
+	&__play-image {
+		height: 14px;
+	}
+
+	&__sound-image {
+		width: 75%;
+		height: 60px;
+	}
+
+	&__play-sound-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		align-self: center;
+	}
+
+	&__duration {
+		display: flex;
+		justify-content: flex-end; 
+		height: 15%;
+		color: $semigrey;
+		font-size: 0.8rem;
+	}
+
+	&__footer-block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__file-title {
+		margin-bottom: 3%;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	&__user-size {
+		color: $semigrey;
+		font-size: 0.8rem;
+		font-weight: bold;
+		opacity: 0.7;
+	}
+
+	&__comment-block {
+		display: flex;
+		align-items: flex-end;
+		opacity: 0.9;
+	}
+
+	&__footer-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__comment-amount {
+		display: flex;
+		align-self: flex-end;
+		color: $semigrey;
+	}
+
+	&__comment-image {
+		height: 20px;
+		margin-right: 5px;
+	}
+}
