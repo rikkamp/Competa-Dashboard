@@ -1,8 +1,8 @@
 .user {
 	display: grid;
-	grid-template-columns: 50px 30px 30px;
+	grid-template-columns: 60px 50px 30px;
 	justify-content: center;
-	grid-gap: 25px;
+	grid-gap: 5px;
 	align-items: center;
 	margin-top: 11%;
 
@@ -14,12 +14,13 @@
 	&__img {
 		display: flex;
 		border-radius: 8px;
-		height: 40px;
-		width: 40px;
+		height: 50px;
+		width: 50px;
 	}
 
 	&__name {
 		cursor: pointer;
+		font-size: 0.8rem;
 	}
 
 	&__dropdown {
@@ -37,11 +38,13 @@
 		border-radius: 30%;
 		border: 2px solid #00d400;
 		align-self: flex-end;
+		margin-left: 10px; 
 	}
 
 	&__dropdown-btn {
 		width: 10px;
 		height: 10px;
+		margin-bottom: 2px;
 	}
 
 	&__dropdown-content {

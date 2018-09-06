@@ -12,7 +12,8 @@
 	<div class="nav-wrapper">
 		<nav class="main-nav">
 			<div>
-				<a class="main-nav__logo-link" href="#"><img src="logo.png" width="50" class="main-nav__logo"></a>
+				<a class="main-nav__logo-link" onclick="playAudio()" href="#"><img src="logo.png" width="50" class="main-nav__logo"></a>
+				<audio id="audio" src="audio/soc.mp3"></audio>
 				<ul class="main-nav__list">
 					<li class="main-nav__list-item"><a class="main-nav__list-item-link" id="autofocus" href="#">Recent Files</a></li>
 					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Projects</a></li>
@@ -50,7 +51,7 @@
 	<div class="main-content-wrapper">
 		<header class="header">
 			<div class="header__main">
-				<div>
+				<div class="header__info-wrapper">
 					<p class="header__info--color">Frame marketing</p>
 					<h2 class="header__font">Recent files</h2>
 				</div>

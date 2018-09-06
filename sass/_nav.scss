@@ -14,22 +14,19 @@
 	justify-content: space-between;
 	padding-top: 2%;
 	height: 80%;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
 	background-image: linear-gradient(to bottom, $nav-grey, darken($nav-grey, 7.5%));
 
 	&__add-option {
 		text-decoration: none;
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		background-color: $upload-button;
 		border-radius: 15%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: $white;
-		margin: 17.5% 0 0 87.5%;
+		margin: 17.5% 0 0 82.5%;
 	}
 
 	&__logo {
@@ -58,8 +55,8 @@
 
 			&::after {
 				position: absolute;
-				left: 25%;
-				margin: 2.5% 0 0 0;
+				left: 4%;
+				margin-top: 0.4%;
 				display: inline-block;
 				height: 2px;
 				background: $grey-text;
@@ -75,8 +72,8 @@
 
 	&__list-item-link::after {
 		position: absolute;
-		left: 25%;
-		margin: 2.5% 0 0 0;
+		left: 4%;
+		margin-top: 0.4%;
 		display: inline-block;
 		height: 2px;
 		background: $grey-text;
@@ -105,11 +102,13 @@
 	&__list-item {
 		&--title {
 			text-align: center;
+			font-size: 0.9rem;
 		}
 
 		&--loading {
 			text-align: center;
 			color: $grey-text;
+			font-size: 0.8rem;
 		}
 
 	}
@@ -130,81 +129,6 @@
 			border: 0;
 			width: 65%;
 			margin: 0;
-		}
-	}
-}
-
-@media only screen and (max-width: 1000px) {
-	* {
-		font-size: 1.6vw;
-	}
-
-	.main-nav {
-		width: 25%;
-		height: 500px;
-
-		&__add-option {
-			text-decoration: none;
-			width: 40px;
-			height: 40px;
-			border-radius: 15%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: $white;
-			margin: 10% 0 0 90%;
-		}
-
-		&__list-item-link {
-			&::after {
-				position: absolute;
-				left: 11.5%;
-				margin: 0.6% 0 0 0;
-				display: inline-block;
-				height: 1px;
-				background: $black;
-				transition: width .3s;
-				width: 0;
-				border: 0;
-				content: '';
-			}
-
-			&:hover::after {
-				width: 20px;
-			}
-		}
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	* {
-		font-size: 2.1vw;
-	}
-
-	.main-nav {
-		width: 25%;
-		height: 400px;
-
-		&__add-option {
-			text-decoration: none;
-			width: 30px;
-			height: 30px;
-			border-radius: 15%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: $white;
-			margin: 10% 0 0 90%;
-		}
-
-		&__list-item-link {
-			&::after {
-				display: none;
-			}
-
-			&:hover::after {
-				display: none;
-			}
 		}
 	}
 }

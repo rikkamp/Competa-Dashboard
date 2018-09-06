@@ -1,3 +1,8 @@
+function playAudio(){
+	let audio = document.getElementById("audio");
+	audio.play();
+}
+
 function fadeOut() {
 	let nr = document.getElementById("counted-notifications");
 	nr.classList.toggle('fade-out');
