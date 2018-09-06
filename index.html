@@ -5,6 +5,7 @@
 	<title>Page Title</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<script src="js/app.js"></script>
+	<script src="js/functions.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
@@ -58,13 +59,30 @@
 			</div> 
 			</div>
 		</div>
-		<div class="header__info">
-			<img class="header__info--pics" src="img/search-solid.svg">
-			<img class="header__info--pics" src="img/user-friends-solid.svg">
-			<img class="header__info--pics" src="img/bell-solid.svg">
+		<div class="info">
+			<img class="info__icon" src="img/search-solid.svg">
+			<img class="info__icon" src="img/user-friends-solid.svg">
+			<img class="fade-out info__icon notification" id="notification" src="img/bell-solid.svg">
+			<div class="info__icon counted-notifications" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 500);  setTimeout(fadeIn, 520);">2</div>
 		</div>
 	</header>
 <!-- **************************************************************************************************************************************************** -->
+	<div class="user">
+		<div class="user__stat">
+			<div class="user__status"></div>
+			<img class="user__img" src="img/example.png" alt="example">
+		</div>
+		<span onclick="dropdown('content')" class="user__name">Crivian</span>
+		<div class="user__dropdown">
+			<img onclick="dropdown('content')" class="user__dropdown-btn" src="img/angle-down-solid.svg">
+			<div id="content" class="user__dropdown-content">
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Profile</a></p>
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Settings</a></p>
+				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Log out</a></p>
+			</div>
+		</div>
+	</div>
+<!-- ******************************************************************************************************************************************************** -->
 	<main class="timeline">
 		<section class="timeline__container">
 			<header class="timeline__header">Today</header>
