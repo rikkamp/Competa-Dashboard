@@ -13,8 +13,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding-top: 2%;
-	height: 77%;
+	height: 85vh;
 	background-image: linear-gradient(to bottom, $nav-grey, darken($nav-grey, 7.5%));
+	min-height: 366px;
 
 	&__add-option {
 		text-decoration: none;
