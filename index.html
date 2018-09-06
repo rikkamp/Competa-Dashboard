@@ -8,340 +8,344 @@
 	<script src="js/functions.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
-<body>
-	<nav class="main-nav">
-		<div>
-			<a class="main-nav__logo-link" href="#"><img src="logo.png" width="50" class="main-nav__logo"></a>
-			<ul class="main-nav__list">
-				<li class="main-nav__list-item"><a class="main-nav__list-item-link" id="autofocus" href="#">Recent Files</a></li>
-				<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Projects</a></li>
-				<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Teams</a></li>
-				<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Archive</a></li>
-				<li class="main-nav__list-item-add-option"><a class="main-nav__add-option" href="#">+</a></li>
+<body class="page__body">
+	<div class="nav-wrapper">
+		<nav class="main-nav">
+			<div>
+				<a class="main-nav__logo-link" href="#"><img src="logo.png" width="50" class="main-nav__logo"></a>
+				<ul class="main-nav__list">
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" id="autofocus" href="#">Recent Files</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Projects</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Teams</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">Archive</a></li>
+					<li class="main-nav__list-item-add-option"><a class="main-nav__add-option" href="#">+</a></li>
+				</ul>
+			</div>
+			<ul class="second-nav__list">
+				<li class="second-nav__list-item--title">Uploading 5 Files</li><br>
+				<li class="second-nav__list-item-line"><span><hr class="second-nav__list-item-line--black"></span></li>
+				<li class="second-nav__list-item-line"><span><hr class="second-nav__list-item-line--grey"></span></li>
+				<br>
+				<li class="second-nav__list-item--loading">9.8 Mbs - 52 second left</li>
 			</ul>
-		</div>
-		<ul class="second-nav__list">
-			<li class="second-nav__list-item--title">Uploading 5 Files</li><br>
-			<li class="second-nav__list-item-line"><span><hr class="second-nav__list-item-line--black"></span></li>
-			<li class="second-nav__list-item-line"><span><hr class="second-nav__list-item-line--grey"></span></li>
-			<br>
-			<li class="second-nav__list-item--loading">9.8 Mbs - 52 second left</li>
-		</ul>
-	</nav>
-<!-- ********************************************************************************************************************************** -->
-	<header class="header">
-		<div class="header__main">
-			<div>
-				<p class="header__info--color">Frame marketing</p>
-				<h2 class="header__font">Recent files</h2>
+		</nav>
+		<!-- **************************************************************************************************************************************************** -->
+		<div class="user">
+			<div class="user__stat">
+				<div class="user__status"></div>
+				<img class="user__img" src="img/example.png" alt="example">
 			</div>
-			<div>
-				<p class="header__info--color">9 members</p>
-				<div style="">
-					<ul class="header__list">
-						<li class="header__pics">
-							<a class="header__link"href="#">
-								<div class="header__plus">+
-								</div>
-							</a>
-						</li>
-						<li class="header__pics"><img class="header__user"src="img/ice.png"></li>
-						<li class="header__pics"><img class="header__user" src="img/eazy.png"></li>
-						<li class="header__pics"><img class="header__user" src="img/dre.png"></li>
-						<li class="header__pics"><img class="header__user" src="img/ren.png"></li>
-						<li class="header__pics">
-							<a class="header__link"href="#">
-								<div class="header__plusfive"> +5
-								</div>
-							</a>
-						</li>
-					</ul>
-			</div> 
-			</div>
-		</div>
-		<div class="info">
-			<img class="info__icon" src="img/search-solid.svg">
-			<img class="info__icon" src="img/user-friends-solid.svg">
-			<img class="fade-out info__icon notification" id="notification" src="img/bell-solid.svg">
-			<div class="info__icon counted-notifications" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 500);  setTimeout(fadeIn, 520);">2</div>
-		</div>
-	</header>
-<!-- **************************************************************************************************************************************************** -->
-	<div class="user">
-		<div class="user__stat">
-			<div class="user__status"></div>
-			<img class="user__img" src="img/example.png" alt="example">
-		</div>
-		<span onclick="dropdown('content')" class="user__name">Crivian</span>
-		<div class="user__dropdown">
-			<img onclick="dropdown('content')" class="user__dropdown-btn" src="img/angle-down-solid.svg">
-			<div id="content" class="user__dropdown-content">
-				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Profile</a></p>
-				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Settings</a></p>
-				<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Log out</a></p>
+			<span onclick="dropdown('content')" class="user__name">Crivian</span>
+			<div class="user__dropdown">
+				<img onclick="dropdown('content')" class="user__dropdown-btn" src="img/angle-down-solid.svg">
+				<div id="content" class="user__dropdown-content">
+					<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Profile</a></p>
+					<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Settings</a></p>
+					<p class="user__dropdown-text"><a class="user__dropdown-links" href="#">Log out</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
-<!-- ******************************************************************************************************************************************************** -->
-	<main class="timeline">
-		<section class="timeline__container">
-			<header class="timeline__header">Today</header>
-			<div class="timeline__grid">
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-big" href="#" data-image-src="./img/skyscraper.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__progress-block">
-							<div class="mp4-item__progress-ball"></div>
-							<p class="mp4-item__progress-text">In progress</p>
-						</div>
-						<div class="mp4-item__length">01:45</div>
-					</div>
-					<div class="mp4-item__play-button">
-						<img class="mp4-item__play-image" src="img/play.svg"/>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Buildings.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 759 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">2</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/nature.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">05:10</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Nature.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 136 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp3" href="#">
-					<div class="mp3-item__play-sound-box">
-						<div class="mp3-item__play-button">
-							<img class="mp3-item__play-image" src="img/play.svg">
-						</div>
-						<img class="mp3-item__sound-image" src="img/soundwave.png">
-					</div>
-					<p class="mp3-item__duration">01:17</p>
-					<div class="mp3-item__footer-block">
-						<div class="mp3-item__footer-info">
-							<h4 class="mp3-item__file-title">Soundstrack.mp3</h4>
-							<p class="mp3-item__user-size">Anna &middot; 12 MB</p>
-						</div>
-						<div class="mp3-item__comment-block">
-							<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
-							<p class="mp3-item__comment-amount">4</p>
-						</div>
-					</div>
-				</a>
-				<a class="timeline__item timeline__item--mp3" href="#">
-					<div class="mp3-item__play-sound-box">
-						<div class="mp3-item__play-button">
-							<img class="mp3-item__play-image" src="img/play.svg">
-						</div>
-						<img class="mp3-item__sound-image" src="img/soundwave.png">
-					</div>
-					<p class="mp3-item__duration">01:17</p>
-					<div class="mp3-item__footer-block">
-						<div class="mp3-item__footer-info">
-							<h4 class="mp3-item__file-title">Voice.mp3</h4>
-							<p class="mp3-item__user-size">Anna &middot; 9 MB</p>
-						</div>
-						<div class="mp3-item__comment-block">
-							<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
-							<p class="mp3-item__comment-amount">4</p>
-						</div>
-					</div>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/space.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">07:21</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Space.mp4</p>
-							<p class="mp4-item__username">Jakub &middot; 241 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--lower-background" href="#" data-image-src="./img/people.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">02:24</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">People.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 1.3 GB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">5</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/future.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">08:02</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Future.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 783 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
+<!-- ********************************************************************************************************************************** -->
+	<div class="main-content-wrapper">
+		<header class="header">
+			<div class="header__main">
+				<div>
+					<p class="header__info--color">Frame marketing</p>
+					<h2 class="header__font">Recent files</h2>
+				</div>
+				<div>
+					<p class="header__info--color">9 members</p>
+					<div>
+						<ul class="header__list">
+							<li class="header__pics">
+								<a class="header__link"href="#">
+									<div class="header__plus">+
+									</div>
+								</a>
+							</li>
+							<li class="header__pics"><img class="header__user"src="img/ice.png"></li>
+							<li class="header__pics"><img class="header__user" src="img/eazy.png"></li>
+							<li class="header__pics"><img class="header__user" src="img/dre.png"></li>
+							<li class="header__pics"><img class="header__user" src="img/ren.png"></li>
+							<li class="header__pics">
+								<a class="header__link"href="#">
+									<div class="header__plusfive"> +5
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div> 
+				</div>
 			</div>
-		</section>
-		<section class="timeline__container">
-			<header class="timeline__header">Yesterday</header>
-			<div class="timeline__grid">
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--zoomed-in" href="#" data-image-src="./img/chair.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">05:10</div>
-					</div>
-					<footer class="mp4-item__footer-block mp4-item__footer-block--dark-text">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Furniture.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 136 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble-dark.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp3" href="#">
-					<div class="mp3-item__play-sound-box">
-						<div class="mp3-item__play-button">
-							<img class="mp3-item__play-image" src="img/play.svg">
-						</div>
-						<img class="mp3-item__sound-image" src="img/soundwave.png">
-					</div>
-					<p class="mp3-item__duration">01:17</p>
-					<div class="mp3-item__footer-block">
-						<div class="mp3-item__footer-info">
-							<h4 class="mp3-item__file-title">Soundstrack.mp3</h4>
-							<p class="mp3-item__user-size">Anna &middot; 12 MB</p>
-						</div>
-						<div class="mp3-item__comment-block">
-							<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
-							<p class="mp3-item__comment-amount">4</p>
-						</div>
-					</div>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/mountains.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">05:10</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Mountains.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 136 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--zoomed-in" href="#" data-image-src="./img/man.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">01:07</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Summer.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 136 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp3" href="#">
-					<div class="mp3-item__play-sound-box">
-						<div class="mp3-item__play-button">
-							<img class="mp3-item__play-image" src="img/play.svg">
-						</div>
-						<img class="mp3-item__sound-image" src="img/soundwave.png">
-					</div>
-					<p class="mp3-item__duration">01:17</p>
-					<div class="mp3-item__footer-block">
-						<div class="mp3-item__footer-info">
-							<h4 class="mp3-item__file-title">Voice.mp3</h4>
-							<p class="mp3-item__user-size">Anna &middot; 9 MB</p>
-						</div>
-						<div class="mp3-item__comment-block">
-							<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
-							<p class="mp3-item__comment-amount">4</p>
-						</div>
-					</div>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/space.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">07:21</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Space.mp4</p>
-							<p class="mp4-item__username">Jakub &middot; 241 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--lower-background" href="#" data-image-src="./img/people.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">02:24</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">People.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 1.3 GB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">5</p>
-						</div>
-					</footer>
-				</a>
-				<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/future.png">
-					<div class="mp4-item__length-block">
-						<div class="mp4-item__length">08:02</div>
-					</div>
-					<footer class="mp4-item__footer-block">
-						<div class="mp4-item__info">
-							<p class="mp4-item__file-name">Future.mp4</p>
-							<p class="mp4-item__username">Thomas &middot; 783 MB</p>
-						</div>
-						<div class="mp4-item__comment-block">
-							<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
-							<p class="mp4-item__comment-amount">8</p>
-						</div>
-					</footer>
-				</a>
+			<div class="info">
+				<img class="info__icon" src="img/search-solid.svg">
+				<img class="info__icon" src="img/user-friends-solid.svg">
+				<img class="fade-out info__icon notification" id="notification" src="img/bell-solid.svg">
+				<div class="info__icon counted-notifications" id="counted-notifications" onclick="fadeOut(); setTimeout(fade, 500);  setTimeout(fadeIn, 520);">2</div>
 			</div>
-		</section>
-	</main>
+		</header>
+	<!-- ******************************************************************************************************************************************************** -->
+		<main class="timeline">
+			<section class="timeline__container">
+				<header class="timeline__header">Today</header>
+				<div class="timeline__grid">
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-big" href="#" data-image-src="./img/skyscraper.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__progress-block">
+								<div class="mp4-item__progress-ball"></div>
+								<p class="mp4-item__progress-text">In progress</p>
+							</div>
+							<div class="mp4-item__length">01:45</div>
+						</div>
+						<div class="mp4-item__play-button">
+							<img class="mp4-item__play-image" src="img/play.svg"/>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Buildings.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 759 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">2</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/nature.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">05:10</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Nature.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 136 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp3" href="#">
+						<div class="mp3-item__play-sound-box">
+							<div class="mp3-item__play-button">
+								<img class="mp3-item__play-image" src="img/play.svg">
+							</div>
+							<img class="mp3-item__sound-image" src="img/soundwave.png">
+						</div>
+						<p class="mp3-item__duration">01:17</p>
+						<div class="mp3-item__footer-block">
+							<div class="mp3-item__footer-info">
+								<h4 class="mp3-item__file-title">Soundstrack.mp3</h4>
+								<p class="mp3-item__user-size">Anna &middot; 12 MB</p>
+							</div>
+							<div class="mp3-item__comment-block">
+								<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
+								<p class="mp3-item__comment-amount">4</p>
+							</div>
+						</div>
+					</a>
+					<a class="timeline__item timeline__item--mp3" href="#">
+						<div class="mp3-item__play-sound-box">
+							<div class="mp3-item__play-button">
+								<img class="mp3-item__play-image" src="img/play.svg">
+							</div>
+							<img class="mp3-item__sound-image" src="img/soundwave.png">
+						</div>
+						<p class="mp3-item__duration">01:17</p>
+						<div class="mp3-item__footer-block">
+							<div class="mp3-item__footer-info">
+								<h4 class="mp3-item__file-title">Voice.mp3</h4>
+								<p class="mp3-item__user-size">Anna &middot; 9 MB</p>
+							</div>
+							<div class="mp3-item__comment-block">
+								<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
+								<p class="mp3-item__comment-amount">4</p>
+							</div>
+						</div>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/space.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">07:21</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Space.mp4</p>
+								<p class="mp4-item__username">Jakub &middot; 241 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--lower-background" href="#" data-image-src="./img/people.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">02:24</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">People.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 1.3 GB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">5</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/future.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">08:02</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Future.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 783 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+				</div>
+			</section>
+			<section class="timeline__container">
+				<header class="timeline__header">Yesterday</header>
+				<div class="timeline__grid">
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--zoomed-in" href="#" data-image-src="./img/chair.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">05:10</div>
+						</div>
+						<footer class="mp4-item__footer-block mp4-item__footer-block--dark-text">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Furniture.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 136 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble-dark.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp3" href="#">
+						<div class="mp3-item__play-sound-box">
+							<div class="mp3-item__play-button">
+								<img class="mp3-item__play-image" src="img/play.svg">
+							</div>
+							<img class="mp3-item__sound-image" src="img/soundwave.png">
+						</div>
+						<p class="mp3-item__duration">01:17</p>
+						<div class="mp3-item__footer-block">
+							<div class="mp3-item__footer-info">
+								<h4 class="mp3-item__file-title">Soundstrack.mp3</h4>
+								<p class="mp3-item__user-size">Anna &middot; 12 MB</p>
+							</div>
+							<div class="mp3-item__comment-block">
+								<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
+								<p class="mp3-item__comment-amount">4</p>
+							</div>
+						</div>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/mountains.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">05:10</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Mountains.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 136 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--zoomed-in" href="#" data-image-src="./img/man.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">01:07</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Summer.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 136 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp3" href="#">
+						<div class="mp3-item__play-sound-box">
+							<div class="mp3-item__play-button">
+								<img class="mp3-item__play-image" src="img/play.svg">
+							</div>
+							<img class="mp3-item__sound-image" src="img/soundwave.png">
+						</div>
+						<p class="mp3-item__duration">01:17</p>
+						<div class="mp3-item__footer-block">
+							<div class="mp3-item__footer-info">
+								<h4 class="mp3-item__file-title">Voice.mp3</h4>
+								<p class="mp3-item__user-size">Anna &middot; 9 MB</p>
+							</div>
+							<div class="mp3-item__comment-block">
+								<img class="mp3-item__comment-image" src="img/chat-bubble-dark.svg">
+								<p class="mp3-item__comment-amount">4</p>
+							</div>
+						</div>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/space.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">07:21</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Space.mp4</p>
+								<p class="mp4-item__username">Jakub &middot; 241 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small timeline__item--lower-background" href="#" data-image-src="./img/people.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">02:24</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">People.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 1.3 GB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">5</p>
+							</div>
+						</footer>
+					</a>
+					<a class="timeline__item timeline__item--mp4 timeline__item--mp4-small" href="#" data-image-src="./img/future.png">
+						<div class="mp4-item__length-block">
+							<div class="mp4-item__length">08:02</div>
+						</div>
+						<footer class="mp4-item__footer-block">
+							<div class="mp4-item__info">
+								<p class="mp4-item__file-name">Future.mp4</p>
+								<p class="mp4-item__username">Thomas &middot; 783 MB</p>
+							</div>
+							<div class="mp4-item__comment-block">
+								<img class="mp4-item__comment-image" src="img/chat-bubble.svg"/>
+								<p class="mp4-item__comment-amount">8</p>
+							</div>
+						</footer>
+					</a>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
 </html>

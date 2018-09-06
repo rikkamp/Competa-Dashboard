@@ -4,6 +4,15 @@
 	font-family: 'Arial';
 }
 
+.page__body {
+	display: flex;
+	overflow: hidden;
+}
+
+.main-content-wrapper {
+	width: 82.5%;
+}
+
 @import 'vars';
 @import 'timeline';
 @import 'nav';

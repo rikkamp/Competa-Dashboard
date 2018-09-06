@@ -2,16 +2,21 @@
 	font-size: 1.1vw;
 }
 
+.nav-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 17.5%;
+}
+
 .main-nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 17.5%;
-	height: 80vh;
 	padding-top: 2%;
-	position: absolute;
-	top: 0;
-	left: 0;
+	height: 80%;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
 	background-image: linear-gradient(to bottom, $nav-grey, darken($nav-grey, 7.5%));
 
 	&__add-option {
