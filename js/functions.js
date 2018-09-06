@@ -1,3 +1,21 @@
+function fadeOut() {
+	let nr = document.getElementById("counted-notifications");
+	nr.classList.toggle('fade-out');
+}
+
+function fade() {
+	let nr = document.getElementById("counted-notifications");
+	let noti = document.getElementById("notification");
+	nr.style.display = 'none';
+	noti.style.display = 'flex';
+}
+
+function fadeIn() {
+	let noti = document.getElementById("notification");
+	noti.classList.toggle('fade-out');
+	noti.classList.toggle('fade-in');
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdown(id) {
@@ -6,9 +24,9 @@ function dropdown(id) {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
+	if (!event.target.matches('.user__dropbtn')) {
 
-		let dropdowns = document.getElementsByClassName("dropdown-content");
+		let dropdowns = document.getElementById("content");
 		let i;
 		for (i = 0; i < dropdowns.length; i++) {
 			let openDropdown = dropdowns[i];
@@ -18,26 +36,3 @@ window.onclick = function(event) {
 		}
 	}
 };
-
-let noti = document.getElementById("notification");
-let nr = document.getElementById("counted-notifications");
-
-function changeNotification() {
-	noti.style.display = 'none';
-	nr.style.display = 'flex';
-}
-onload(changeNotification());
-
-function fadeOut() {
-	nr.classList.add('fade-out');
-}
-
-function fade() {
-	nr.style.display = 'none';
-	noti.style.display = 'flex';
-}
-
-function fadeIn() {
-	noti.classList.remove('fade-out');
-	noti.classList.add('fade-in');
-}
