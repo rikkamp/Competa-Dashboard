@@ -12,13 +12,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
+	background-image: linear-gradient(to bottom, $nav-grey, darken($nav-grey, 7.5%));
 
 	&__add-option {
 		text-decoration: none;
 		width: 50px;
 		height: 50px;
-		background-color: #535aff;
+		background-color: $upload-button;
 		border-radius: 15%;
 		display: flex;
 		justify-content: center;
@@ -43,27 +43,28 @@
 
 	&__list-item-link {
 		display: inline-block;
-		color: $lightgrey;
+		color: $grey-text;
 		text-decoration: none;
 		outline: none;
 		margin-top: 5%;
 
 		&:focus {
 			color: $black;
+
 			&::after {
 				position: absolute;
 				left: 25%;
 				margin: 2.5% 0 0 0;
 				display: inline-block;
-				height: 1px;
-				background: $black;
+				height: 2px;
+				background: $grey-text;
 				width: 40px;
 				border: 0;
 				content: '';
 			}
 		}
 		&:hover {
-			color: black;
+			color: $black;
 		}
 	}
 
@@ -72,8 +73,8 @@
 		left: 25%;
 		margin: 2.5% 0 0 0;
 		display: inline-block;
-		height: 1px;
-		background: $black;
+		height: 2px;
+		background: $grey-text;
 		transition: width .3s;
 		width: 0;
 		border: 0;
@@ -85,7 +86,7 @@
 	}
 
 	&__add-option:hover {
-		background-color: rgb(99, 108, 255);
+		background-color: darken($upload-button, 5%);
 	}
 
 }
@@ -98,30 +99,31 @@
 
 	&__list-item {
 		&--title {
-			margin: 0 0 0 32%;
+			text-align: center;
 		}
 
 		&--loading {
-			margin: 0 0 0 31%;
-			color: $grey;
+			text-align: center;
+			color: $grey-text;
 		}
 
 	}
 
 	&__list-item-line {
+		
 		&--grey {
+			height: 1px;
 			background: $lightgrey;
 			border: 0;
 			width: 35%;
-			height: 0.8px;
 			margin: 0 0 0 65%;
 		}
-
+		
 		&--black {
+			height: 1px;
 			background: $black;
 			border: 0;
 			width: 65%;
-			height: 0.8px;
 			margin: 0;
 		}
 	}
@@ -135,23 +137,17 @@
 	.main-nav {
 		width: 25%;
 		height: 500px;
-		background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 
 		&__add-option {
 			text-decoration: none;
 			width: 40px;
 			height: 40px;
-			background-color: #535aff;
 			border-radius: 15%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			color: $white;
 			margin: 10% 0 0 90%;
-
-			&:hover {
-				background-color: rgb(99, 108, 255);
-			}
 		}
 
 		&__list-item-link {
@@ -183,23 +179,17 @@
 	.main-nav {
 		width: 25%;
 		height: 400px;
-		background-image: linear-gradient(to bottom, rgb(239, 242, 253), rgb(243, 241, 245));
 
 		&__add-option {
 			text-decoration: none;
 			width: 30px;
 			height: 30px;
-			background-color: #535aff;
 			border-radius: 15%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			color: $white;
 			margin: 10% 0 0 90%;
-
-			&:hover {
-				background-color: rgb(99, 108, 255);
-			}
 		}
 
 		&__list-item-link {

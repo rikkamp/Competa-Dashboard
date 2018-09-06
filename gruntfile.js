@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: ['sass/*.scss'],
-				tasks: ['sass'],
+				tasks: ['sass', 'cssmin'],
 				options: {
 					spawn: true,
 				},
@@ -36,10 +36,22 @@ module.exports = function(grunt) {
 				},
 			},
 		},
+		cssmin: {
+			options: {
+				mergeIntoShorthands: false,
+				roundingPrecision: -1
+			},
+			target: {
+				files: {
+				'css/index.css': ['css/index.css']
+				}
+			}
+		}
 	});
 	
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.registerTask('default', ['sass', 'cssmin', 'browserSync', 'watch']);
 };
