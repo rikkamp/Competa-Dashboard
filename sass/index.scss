@@ -1,12 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Arial';
 }
 
-p {
-    font-family:  "Comic Sans MS", cursive, sans-serif;
-}
-
-@import 'sidebar';
 @import 'vars';
+@import 'timeline';
+@import 'nav';
 @import 'info';
