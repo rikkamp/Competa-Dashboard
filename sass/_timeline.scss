@@ -108,7 +108,7 @@
 		align-items: center;
 		background-color: $darkgrey-transparent;
 		border-radius: 7.5px;
-		padding: 6px 10px;
+		padding: 5px 10px 2px 10px;
 		margin-right: 2%;
 	}
 	
@@ -125,7 +125,27 @@
 		align-items: center;
 		background-color: $lightblue-transparent;
 		border-radius: 7.5px;
-		padding: 6px 7.5px;
+		padding: 5px 7.5px 2px 7.5px;
+
+		&--skyblue {
+			background-color: $skyblue;
+		}
+
+		&--aqua {
+			background-color: $aqua;
+		}
+
+		&--brown {
+			background-color: $brown;
+		}
+
+		&--browngrey {
+			background-color: $browngrey;
+		}
+
+		&--lightpurple {
+			background-color: $lightpurple;
+		}
 	}
 
 	&__play-button {
