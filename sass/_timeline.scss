@@ -68,7 +68,6 @@
 		}
 
 		&--mp4 {
-			box-shadow: 5px 5px 20px $darkgrey-transparent;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -101,6 +100,7 @@
 	&__length-block {
 		display: flex;
 		justify-content: flex-end;
+		font-size: .85rem;
 	}
 
 	&__progress-block {
@@ -108,7 +108,7 @@
 		align-items: center;
 		background-color: $darkgrey-transparent;
 		border-radius: 7.5px;
-		padding: 5px 10px 2px 10px;
+		padding: 5px 10px 5px 10px;
 		margin-right: 2%;
 	}
 	
@@ -125,7 +125,7 @@
 		align-items: center;
 		background-color: $lightblue-transparent;
 		border-radius: 7.5px;
-		padding: 5px 7.5px 2px 7.5px;
+		padding: 5px 7.5px 5px 7.5px;
 
 		&--skyblue {
 			background-color: $skyblue;
@@ -166,12 +166,12 @@
 	&__footer-block {
 		display: flex;
 		justify-content: space-between;
-
+		
 		&--dark-text {
 			.mp4-item__file-name {
 				color: $black;
 			}
-
+			
 			.mp4-item__username {
 				color: $semigrey;
 			}
@@ -189,8 +189,12 @@
 	}
 
 	&__file-name {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: bold;
+
+		&--small {
+			font-size: .9rem;
+		}
 	}
 
 	&__username {
@@ -205,12 +209,13 @@
 	}
 
 	&__comment-image {
-		height: 20px;
+		height: 17px;
 		margin-right: 5px;
 	}
 	
 	&__comment-amount {
 		color: $lightergrey;
+		font-size: .9rem;
 	}
 }
 
@@ -259,14 +264,13 @@
 
 	&__file-title {
 		margin-bottom: 3%;
-		font-size: 1.2rem;
+		font-size: .9rem;
 		font-weight: bold;
 	}
 
 	&__user-size {
 		color: $semigrey;
-		font-size: 0.8rem;
-		font-weight: bold;
+		font-size: .8rem;
 		opacity: 0.7;
 	}
 
@@ -285,10 +289,11 @@
 		display: flex;
 		align-self: flex-end;
 		color: $semigrey;
+		font-size: .9rem;
 	}
 
 	&__comment-image {
-		height: 20px;
+		height: 17px;
 		margin-right: 5px;
 	}
 }

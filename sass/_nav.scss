@@ -1,11 +1,8 @@
-* {
-	font-size: 1.1vw;
-}
-
 .nav-wrapper {
 	display: flex;
 	flex-direction: column;
 	width: 17.5%;
+	font-size: 1.1vw;
 }
 
 .main-nav {
@@ -14,7 +11,7 @@
 	justify-content: space-between;
 	padding-top: 2%;
 	height: 85vh;
-	background-image: linear-gradient(to bottom, $nav-grey, darken($nav-grey, 7.5%));
+	background-color: $nav-grey;
 	min-height: 366px;
 
 	&__add-option {
@@ -103,7 +100,8 @@
 	&__list-item {
 		&--title {
 			text-align: center;
-			font-size: 0.9rem;
+			font-size: 0.8rem;
+			font-weight: bold;
 		}
 
 		&--loading {
