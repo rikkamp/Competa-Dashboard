@@ -28,8 +28,8 @@
 		height: 500px;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-		grid-gap: 1.5%;
-		grid-row-gap: 3%;
+		grid-gap: 2%;
+		grid-row-gap: 5%;
 
 		& * {
 			text-decoration: none;
@@ -68,7 +68,6 @@
 		}
 
 		&--mp4 {
-			box-shadow: 5px 5px 20px $darkgrey-transparent;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
